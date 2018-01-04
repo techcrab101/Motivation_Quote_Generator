@@ -47,16 +47,17 @@ for i, phrase in enumerate(list_phrase):
 
 print('phrase length:', len(list_phrase))
 
-font_size = ( 1 / char_len ) * 150
+max_font = 2
+min_font = 1
 
-font_size = 2 if font_size > 2 else font_size
+font_size = (1 / (1+(math.e**( 0.1 * (char_len - 50 ))))) * (max_font - min_font) + min_font
 
 print('font size:', font_size)
 
 print()
 print(new_list_phrase)
 
-new_list_phrase += '\n#staywoke'
+# new_list_phrase += '\n#staywoke'
 
 y0, dy = 50, 50
 for i, line in enumerate(new_list_phrase.split('\n')):
