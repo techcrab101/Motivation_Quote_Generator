@@ -78,7 +78,7 @@ while True:
     y = input('Do you want to save the image (y/n) ')
     
     if y in ['y', 'Y', 'Yes', 'yes', 'true', 'True']:
-        cv2.imwrite(img_path + 'motivational_img.jpg', img)
+        cv2.imwrite('Messages/' + img_path + 'motivational_img.jpg', img)
         break
     elif y in ['n', 'N', 'no', 'No', 'NO', 'False', 'false']:
         break
